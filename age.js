@@ -17,31 +17,20 @@ age2 = 8;
 age3 = 9;
 age4 = 27;
 
-if (age1) {
-
-	document.getElementById('age1').innerHTML = age1 * year;
-} else
-
-if (age2) {
-	document.getElementById('age2').innerHTML = age2 * year;
-} else
-if (age3) {
-	document.getElementById('age3').innerHTML = age3 * year;
-} else
-if (age4) {
-	document.getElementById('age4').innerHTML = age4 * year;
-}
-
-
-
-
-
-var yearText = hoursInYear + " "+ "hours" + " ";
-document.getElementById('hours').innerHTML = yearText;
-
-var decadeText = 525,600 + " " + "minutes" + " ";
-document.getElementById('minutes').innerHTML = decadeText;
-
-if () {
-	document.getElementById('old').innerHTML = decade; 
+function ageSelect() {
+	var age = document.getElementById("mySelect").value;
+if (age == "age1") {
+	document.getElementById('age1').innerHTML = "You are: " + age * minutesPerHour * hoursPerDay * daysPerYear * yearsPerDecade + "minutes old in a decade" ;
+} else if (age == "age2") {
+	document.getElementById('age2').innerHTML = "You are: " + age;
+} else if (age == "age3") {
+	document.getElementById('age3').innerHTML = "You are: " + age;
+} else if (age == "age4") {
+	document.getElementById('age4').innerHTML = "You are: " + age;
+	} else {
+	document.getElementById('hidden').innerHTML = "Please Select An Option"
+	}
 };
+
+
+
