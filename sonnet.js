@@ -1,57 +1,54 @@
+//concept of declaring variables and dom manipulation through a simple sonnet
 var sonnet = document.getElementById("sonnet")
 var sonnetDiv = document.getElementById("sonnet").innerHTML;
-//console.log("original sonnet: ",sonnetDiv);//
 
+//utlizing index of to find the start of a char in a string
 var startingPosition = sonnetDiv.indexOf("orphans");
 console.log("starting position of orphans", startingPosition);
 
 
-
-//switch (startingPosition) {
+//example of how to use a switch statement versus a if,then,else
+switch (startingPosition) {
 	case 410 :
 	case 411 :
 	case 422 :
-	//console.log("hey, you were right.  that never happens");
 	break;
 	case 421 :
-	//console.log("hey, you were wrong.  that never happens");
 	default :
-		//console.log("WTF");
-//}
+}
 
-//console.log("number of characters in sonnet: ", sonnetDiv.length)
+//console to alert user
+console.log("number of characters in sonnet: ", sonnetDiv.length)
 
-//var newContent = sonnetDiv.replace("winter","yuletide").replace(/ the /gi,"a large"); 
-//console.log("both things replaced: ", newContent);
-
-//document.getElementById("sonnet").innerHTML = newContent
-//}
+//exapme of how to use a replace statement in a string
+var newContent = sonnetDiv.replace("winter","yuletide").replace(/ the /gi,"a large"); 
+document.getElementById("sonnet").innerHTML = newContent
 
 
+//example of an array and for loop
 var myArray = ["first element",2,false,"last element"];
 
-//for (var i = 0; i < myArray.length; i++) {
+for (var i = 0; i < myArray.length; i++) {
 	myArray[i]
-}
+};
 
-for (var i = 0; i < 150; i += 10)
-console.log("current value :", i);
-}
-
+for (var i = 0; i < 150; i += 10) {
+};
 
 
-//var today = new Date();
-//var hourNow = today.getHours();
-//var greeting;
+//IF/THEN/ELSE Statement shown through a standard greeting operator
+var today = new Date();
+var hourNow = today.getHours();
+var greeting;
 
-//if (hourNow > 18) {
+if (hourNow > 18) {
     greeting = 'Good evening!';
-//} else if (hourNow > 12) {
+} else if (hourNow > 12) {
     greeting = 'Good afternoon!';
-//} else if (hourNow > 0) {
+} else if (hourNow > 0) {
     greeting = 'Good morning!';
-//} else {
+} else {
     greeting = 'Welcome!';
-//}
+}
 
-//document.write('<h3>' + greeting + '</h3>');//
+document.write('<h3>' + greeting + '</h3>');//
