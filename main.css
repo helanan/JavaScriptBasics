@@ -1,0 +1,20 @@
+body {
+	background: url(http://res.cloudinary.com/emma/image/upload/v1484705595/DD-Grunge-Background-55675-Preview_htzhkc.jpg);
+	width:100%;
+}
+
+h3 {
+	font-family: 'Farsan', cursive;
+}
+
+#sonnet {
+font-family: 'Kumar One', cursive;
+color: #D64933;
+margin: 5%;
+}
+
+#sonnet:hover {
+font-family: 'Kumar One', cursive;
+color: #7C7C7C;
+margin: 5%;
+}
