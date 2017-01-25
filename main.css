@@ -3,6 +3,10 @@ body {
 	width:100%;
 }
 
+h1 {
+	opacity: 100%;
+}
+
 h3 {
 	font-family: 'Farsan', cursive;
 }
@@ -17,4 +21,11 @@ margin: 5%;
 font-family: 'Kumar One', cursive;
 color: #7C7C7C;
 margin: 5%;
+}
+
+select {
+	height: 10em;
+	background: url(http://res.cloudinary.com/emma/image/upload/v1485309160/art_ix74c0.svg);
+	background-repeat: no-repeat;
+	border: none;
 }
