@@ -16,19 +16,21 @@ age1 = 7;
 age2 = 8;
 age3 = 9;
 age4 = 27;
+txt = "Please select an option"
+
 
 function ageSelect() {
 	var age = document.getElementById("mySelect").value;
 if (age == "age1") {
-	document.getElementById('age1').innerHTML = "You are: " + age * minutesPerHour * hoursPerDay * daysPerYear * yearsPerDecade + "minutes old in a decade" ;
+	document.getElementById('age1').innerHTML = "You are" + (age1 * minutesPerHour * hoursPerDay * daysPerYear * yearsPerDecade) + " " + "decade minutes old" ;
 } else if (age == "age2") {
-	document.getElementById('age2').innerHTML = "You are: " + age;
+	document.getElementById('age2').innerHTML = "You are" + (age2 * minutesPerHour * hoursPerDay * daysPerYear * yearsPerDecade) + " " + "decade minutes old" ;
 } else if (age == "age3") {
-	document.getElementById('age3').innerHTML = "You are: " + age;
+	document.getElementById('age3').innerHTML = "You are" + (age3 * minutesPerHour * hoursPerDay * daysPerYear * yearsPerDecade) + " " + "decade minutes old" ;
 } else if (age == "age4") {
-	document.getElementById('age4').innerHTML = "You are: " + age;
+	document.getElementById('age4').innerHTML = "You are" + (age1 * minutesPerHour * hoursPerDay * daysPerYear * yearsPerDecade) + " " + "decade minutes old" ;
 	} else {
-	document.getElementById('hidden').innerHTML = "Please Select An Option"
+	document.getElementById('selectValue').innerHTML = txt;
 	}
 };
 
