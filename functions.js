@@ -66,9 +66,10 @@ for (var x=0; x<=100; x+=10) {
 }
 
 //for loop that pushes the index to an array for 5 times// console.log array [0,1,2,3,]
+text = "the number is"
 numbers = [0,1,2,3,4,5]
-for (i = 0; i < cars.length; i++) { 
-    text += cars[i] + "<br>";
+for (i = 0; i < numbers.length; i++) { 
+    text += numbers[i];
 }
 
 //for loop that starts at 100 and divides by 2 each time 3 times = 
@@ -81,5 +82,17 @@ for (var i=100; i<4; i/2) {
 // var ar2 = ar.map( function(v) { return v*1; } );
 // console.log( ar2 );
 
+for (var i=0; i<5; i++){
+	myArray.push(i);
+	console.log("myArray Inside", myArray);
+}
+
+console.log("myArray ", myArray);
+
+var num = 100;
+for(var j=0; j<3; j++){
+	console.log("Numer: ", num);
+	num=num/2;
+}
 
 
